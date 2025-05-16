@@ -1,0 +1,114 @@
+.veg-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+  background-color: #fdfdfd;
+}
+
+.veg-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.filter-section {
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #e8f5e9;
+  border-radius: 8px;
+}
+
+.filter-section button {
+  margin-bottom: 10px;
+  padding: 8px 16px;
+  background-color: #43a047;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filter-section button:hover {
+  background-color: #388e3c;
+}
+
+.price-filters label {
+  margin-right: 15px;
+  font-size: 1rem;
+}
+
+.veg-card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.veg-card {
+  background-color: #ffffff;
+  border: 1px solid #c8e6c9;
+  border-radius: 8px;
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.veg-card img {
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.veg-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+.veg-price {
+  color: #388e3c;
+  font-weight: bold;
+  margin: 5px 0 10px;
+}
+
+.add-to-cart-btn {
+  padding: 8px 12px;
+  background-color: #43a047;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #2e7d32;
+}
+
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.pagination-controls button {
+  padding: 6px 12px;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination-controls button.active {
+  background-color: #2e7d32;
+  color: white;
+  font-weight: bold;
+}
+
+.pagination-controls button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

@@ -1,0 +1,96 @@
+/* General Styles for App */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Styles */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #333;
+  padding: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+nav a:active {
+  background-color: #777;
+}
+
+/* Cart Link Count Styling */
+nav a:hover {
+  background-color: #555;
+}
+
+nav a {
+  display: inline-flex;
+  align-items: center;
+}
+
+nav a span {
+  margin-left: 5px;
+  background-color: #ff5733;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 50%;
+  font-size: 0.9rem;
+}
+
+/* Main Content Styles */
+div {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* Making sure the entire page is responsive */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav a {
+    font-size: 1rem;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav a {
+    font-size: 0.9rem;
+    padding: 6px;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+}

@@ -1,0 +1,112 @@
+/* Reset and base styling */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: white;
+  color: #333;
+  text-align: center;
+}
+
+/* Container for all app content */
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding-top: 80px; /* Add space to avoid navbar overlap */
+}
+
+/* Navbar styles */
+nav {
+  background-color: green;
+  padding: 12px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap; /* Prevent wrapping */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Link styles */
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+nav a:hover {
+  color: #ffeb3b;
+}
+
+/* Active link style */
+nav a.active {
+  color: #ffeb3b;
+  font-weight: bold;
+}
+
+/* Responsive navbar toggle (if needed later) */
+.nav-toggle {
+  display: none;
+}
+
+/* Button styles */
+button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Card styles */
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Form styles */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+/* Responsive container */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+    padding-top: 100px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav a {
+    margin-bottom: 10px;
+  }
+}
